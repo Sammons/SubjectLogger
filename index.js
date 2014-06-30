@@ -42,7 +42,6 @@ var logger = function(options) {
 
 	for (var i in options) this.subjects[i] = options[i];
 
-
 	var date_log_with_subject = function() {
 		var ts = new Date();
 		var timestamp = GREEN + ts.getHours() + ':' +
@@ -51,8 +50,9 @@ var logger = function(options) {
 						ts.getMilliseconds() + ' ' +
 						ts.getDate() + '/' +
 						ts.getMonth() + '/' +
-						ts.getFullYear() + ' => ' + NC;
+						ts.getFullYear() + ' --' ;
 		Array.prototype.unshift.call(arguments, timestamp);
+		arguments[1] = arguments[1]+' => ' + NC;
 		console.log.apply(this,arguments);
 
 	}	
@@ -73,6 +73,14 @@ var logger = function(options) {
 			if (typeof(object[i]) == typeof({})) this.delve(object[i], property, dodge)
 			if (i == property) console.log(object[i]);
 		}
+	}
+	
+	this.start = function(name) {
+		this[name] = Date.now();
+	}
+
+	this.timesince = function(name) {
+		return Date.now() - this[name];
 	}
 }
 

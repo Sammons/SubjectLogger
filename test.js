@@ -6,6 +6,8 @@ var logger = new loggerlib({
 	subject:true
 });
 
+logger.start('generic');
+
 var ex = {
 	j : {
 		yay : {
@@ -26,3 +28,5 @@ ex.yay = ex;
 logger.log('subject','sup','three','four');
 // logger.spit('sup','yup','bleh');
 logger.delve(ex,'yay');
+
+logger.log('subject',logger.timesince('generic'))
