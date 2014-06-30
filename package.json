@@ -1,0 +1,22 @@
+{
+  "name": "SubjectLogger",
+  "version": "0.0.0",
+  "description": "Handy Lightweight Logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Sammons/SubjectLogger.git"
+  },
+  "keywords": [
+    "logger"
+  ],
+  "author": "Ben Sammons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sammons/SubjectLogger/issues"
+  },
+  "homepage": "https://github.com/Sammons/SubjectLogger"
+}
