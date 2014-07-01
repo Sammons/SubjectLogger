@@ -3,7 +3,7 @@ SubjectLogger
 
 Node.js custom logger, logs by subject, and dives for properties.
 
-Really not a huge module, but who actually like the N layer DEBUG WARNING NOTICE ERROR OHGAWD system for personal projects
+Really not a huge module, but who actually likes the many layer''DEBUG WARNING NOTICE ERROR' system for small personal projects
 
 Simple logging:
 ----
