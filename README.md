@@ -1,3 +1,7 @@
+Install directly from github:
+
+	npm install --save Sammons/SubjectLogger
+
 SubjectLogger
 =============
 
